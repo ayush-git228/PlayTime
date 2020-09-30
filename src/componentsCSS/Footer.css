@@ -1,0 +1,56 @@
+.footer{
+    position:fixed;
+    bottom: 0;
+    display:flex;
+    justify-content: space-between;
+    height:65px;
+    width:97%;
+    background-color: #282828;
+    padding: 20px;
+    color:white;
+}
+
+.footer_left{
+    flex:0.3;
+    display:flex;
+    align-items: center;
+    width:300px;
+}
+
+.footer_albumLogo{
+    height: 60px;
+    width: 60px;
+    margin-right: 20px;
+    object-fit: contain;
+}
+.footer_songInfo >p{
+    font-size: 12px;
+}
+
+.footer_icon:hover,
+
+.footer_salmon:hover{
+    color:  rgb(252, 101, 77);
+    transition: transform 0.2s ease-in;
+    transform: scale(1.2) !important;  /* It is important as it is material-ui so it is overriding.*/
+}
+
+.footer_right * .MuiSlider-root{    /* So it is saying to any slider change it, its a Materiali-ui inbuilt class.*/
+    color: rgb(252,101,77);
+}
+
+.footer_center{
+    flex:0.4;
+    padding: 0 100px; /* 0 on top-bottom and 100 on left-right */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 300px;
+}
+
+.footer_right{
+    flex:0.3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

@@ -1,0 +1,61 @@
+.body{
+    flex:0.8;
+    padding: 30px;
+    height: 100vh;
+    color:white;
+    overflow-y: scroll;
+    background: linear-gradient( rgb(248, 168, 160),rgba(0,0,0,1));
+}
+
+.body::-webkit-scrollbar{
+    display: none;
+}
+
+
+.body_info{
+    display:flex;
+    align-items:flex-end;  /*Align items at the bottom-right cornor.*/
+    padding: 10px; 
+}
+.body_info>img{
+    height:20vw;
+    margin:0 20px;
+    box-shadow: 0 4px 60px black;
+}
+
+.body_infoText >h2{
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+
+.body_infoText >p{
+    font-size: 14px;
+}
+
+.body_infoText{
+    flex:1;
+}
+
+.body_icons{
+    display:flex;
+    align-items: center;
+}
+.body_icons >.MuiSvgIcon-root{
+    margin-right: 20px;
+}
+
+.body_shuffle{
+    font-size: 80px !important;
+    margin-left:50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.body_shuffle:hover{
+    transition: 0.1s transform ease-in;
+    transform: scale(1.08);
+}
+.body_songs{
+    margin: 20px -30px;  /* We use (-)30 B/c it goes against the padding in the container. */
+}
